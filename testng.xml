@@ -4,6 +4,7 @@
 	<test name="testing">
 		<classes>
 			<class name="jenkinstest.TestngTest"/>
+			<class name="jenkinstest.TestngTest2"/>
 		</classes>
 	</test>
 	
