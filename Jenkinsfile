@@ -5,24 +5,21 @@ pipeline{
 			stage ('compile stage') {
 			
 				steps {
-					withMaven(maven : 'maven_3_6_3') {
-						sh 'mvn compile'
+					echo 'compile'
 					}
 				}
 			}
 			
 			stage ('testing stage') {
 				steps {
-					withMaven(maven : 'maven_3_6_3') {
-						sh 'mvn test'
+					echo 'run'
 					}
 				}
 			}
 			
 			stage ('deploy stage') {
 				steps {
-					withMaven(maven : 'maven_3_6_3') {
-						sh 'mvn deploy'
+					echo 'deploy'
 					}
 				}
 			}
