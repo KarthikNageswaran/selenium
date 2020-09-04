@@ -21,7 +21,7 @@ pipeline{
 				}
 			}
 			
-			stage ('compile stage') {
+			stage ('deploy stage') {
 			
 				steps {
 					withMaven(maven : 'maven_3_6_3') {
