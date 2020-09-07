@@ -23,7 +23,7 @@ pipeline {
               }
             }
             steps {
-                sh 'make publish'
+                bat 'make publish'
             }
         }
     }
