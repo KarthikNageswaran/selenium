@@ -27,4 +27,12 @@ pipeline {
             }
         }
     }
+     post {
+        always {
+            junit '**/target/*.xml'
+        }
+        failure {
+            mail to: karthick.inform@gmail.com, subject: 'The Pipeline failed :('
+        }
+    }
 }
