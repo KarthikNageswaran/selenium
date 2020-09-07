@@ -29,9 +29,9 @@ pipeline {
     }
      post {
         always {
-            mail to: 'karthick.inform@gmail.com'
-            subject: 'test'
-            body: 'test1'
+            mail to: karthick.inform@gmail.com
+            subject: test
+            body: test1
         }
     }
 }
