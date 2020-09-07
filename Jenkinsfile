@@ -29,7 +29,7 @@ pipeline {
     }
      post {
         always {
-            testng '**/target/*.xml'
+            mail to 'karthick.inform@gmail.com'
         }
     }
 }
