@@ -29,7 +29,7 @@ pipeline {
     }
      post {
         always {
-            mail to 'karthick.inform@gmail.com'
+            mail to: 'karthick.inform@gmail.com'
         }
     }
 }
